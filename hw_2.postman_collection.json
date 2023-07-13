@@ -21,7 +21,7 @@
 							"\r",
 							"// Полностью включает значение\r",
 							"pm.test(\"Body is correct\", function () {\r",
-							"    pm.response.to.have.body(\"This is the first responce from server!\");\r",
+							"    pm.response.to.have.body(\"This is the first responce from server!ss\");\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -198,7 +198,7 @@
 							"    pm.expect(resData.age).to.eql(+reqData.age);\r",
 							"});\r",
 							"pm.test(\"Check name\", function () {\r",
-							"pm.expect(resData.name).to.eql({{name}});\r",
+							"pm.expect(resData.name).to.eql(reqData.name);\r",
 							"});\r",
 							"\r",
 							"// вывести в консоль salary \r",
